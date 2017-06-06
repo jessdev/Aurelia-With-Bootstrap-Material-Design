@@ -10,6 +10,7 @@ export class Shell {
     config.title = 'Aurelia';
     config.map([
       { route: ['', 'home'], name: 'home', moduleId: 'home', nav: true, title: 'Home' },
+      { route: ['todo'], name: 'todo', moduleId: 'todo', nav: true, title: 'To Do List' }
     ]);
     this.router = router;
   }
@@ -17,8 +18,9 @@ export class Shell {
   attached(){
     if($.material){
       $.material.init();
+      console.log('material inti run');
     }else{
-      console.warn('jquery.ma')
+      console.warn('jquery.material was undefined.')
     }
       
   }
