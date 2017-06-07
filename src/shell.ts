@@ -20,7 +20,7 @@ export class Shell {
       $.material.init();
       console.log('material inti run');
     }else{
-      console.warn('jquery.material was undefined.')
+      console.warn('jquery.material was undefined.');
     }
       
   }
