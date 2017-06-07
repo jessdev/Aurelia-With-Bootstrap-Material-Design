@@ -14,7 +14,7 @@ System.config({
     }
   },
   map: {
-    "arrive": "npm:arrive@2.3.1",
+    "arrive": "npm:arrive@2.4.1",
     "aurelia-animator-css": "npm:aurelia-animator-css@1.0.1",
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0",
     "aurelia-fetch-client": "npm:aurelia-fetch-client@1.0.1",
@@ -57,7 +57,7 @@ System.config({
     "github:twbs/bootstrap@3.3.7": {
       "jquery": "npm:jquery@2.2.4"
     },
-    "npm:arrive@2.3.1": {
+    "npm:arrive@2.4.1": {
       "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:assert@1.4.1": {
