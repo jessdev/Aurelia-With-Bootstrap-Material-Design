@@ -9,6 +9,7 @@ var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
 var typescript = require('gulp-typescript');
 var htmlmin = require('gulp-htmlmin');
+var fs = require('fs');
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -16,6 +17,7 @@ var htmlmin = require('gulp-htmlmin');
 // https://www.npmjs.com/package/gulp-plumber
 var typescriptCompiler = typescriptCompiler || null;
 gulp.task('build-system', function() {
+  
   if(!typescriptCompiler) {
     typescriptCompiler = typescript.createProject('tsconfig.json', {
       "typescript": require('typescript')
@@ -29,6 +31,11 @@ gulp.task('build-system', function() {
     .pipe(typescriptCompiler())
     .pipe(sourcemaps.write('.', {includeContent: false, sourceRoot: '/src'}))
     .pipe(gulp.dest(paths.output));
+});
+
+gulp.task('move-ripples', function(){
+  return fs.createReadStream('node_modules/bootstrap-material-design/dist/css/ripples.css')
+  .pipe(fs.createWriteStream('src/custom-css/ripples.css'));
 });
 
 // copies changed html files to the output directory
