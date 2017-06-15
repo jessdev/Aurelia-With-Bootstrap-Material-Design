@@ -29,6 +29,8 @@ module.exports = {
         "aurelia-logging-console",
         "bootstrap",
         "bootstrap/css/bootstrap.css!text",
+        'bootstrap-material-design/dist/css/bootstrap-material-design.css!text',
+        'bootstrap-material-design/dist/css/ripples.css!text',
         "fetch",
         "jquery"
       ],

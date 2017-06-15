@@ -25,21 +25,16 @@
     <script src="config.js"></script>
     <script src="jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js"></script>
     <script>
-      // System.import('custom-css/custom-bootstrap.css!text').then(function(){
-      //   System.import('custom-css/custom-material.css!text').then(function(){
-      //     System.import('custom-css/ripples.css!text').then(function(){
-      //       System.import('aurelia-bootstrapper');
-      //     });
-      //   });
-      // });
-      System.import('bootstrap/css/bootstrap.css!').then(function(){
-        System.import('bootstrap-material-design/dist/css/bootstrap-material-design.css!').then(function(){
-          // System.import('custom-css/ripples.css!text').then(function(){
-          //   System.import('aurelia-bootstrapper');
-          // });
+      System.import('custom-css/custom-bootstrap.css!').then(function(){
+        System.import('custom-css/custom-material.css!').then(function(){
           System.import('aurelia-bootstrapper');
         });
       });
+      // System.import('bootstrap/css/bootstrap.css!').then(function(){
+      //   System.import('bootstrap-material-design/dist/css/bootstrap-material-design.css!').then(function(){
+      //     System.import('aurelia-bootstrapper');
+      //   });
+      // });
     </script>
   </body>
 </html>
