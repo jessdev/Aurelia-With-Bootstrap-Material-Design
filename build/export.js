@@ -9,6 +9,8 @@ module.exports = {
     'LICENSE',
     "jspm_packages/npm/bluebird@3.4.1/js/browser/bluebird.min.js", 
     'jspm_packages/system.js',
+    'jspm_packages/github/systemjs/plugin-css@*.js',
+    'jspm_packages/github/systemjs/plugin-text@*.js',
     'jspm_packages/system-polyfills.js',
     'jspm_packages/system-csp-production.js',
     'styles/styles.css',

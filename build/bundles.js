@@ -15,6 +15,7 @@ module.exports = {
     },
     "dist/aurelia": {
       "includes": [
+        'arrive',
         "aurelia-framework",
         "aurelia-bootstrapper",
         "aurelia-fetch-client",
@@ -29,6 +30,8 @@ module.exports = {
         "aurelia-logging-console",
         "bootstrap",
         "bootstrap/css/bootstrap.css!text",
+        'font-awesome',
+        'bootstrap-material-design',
         'bootstrap-material-design/dist/css/bootstrap-material-design.css!text',
         'bootstrap-material-design/dist/css/ripples.css!text',
         "fetch",
