@@ -37,6 +37,8 @@
     "aurelia-bundler": "^0.4.0",
     "aurelia-protractor-plugin": "^1.0.0",
     "aurelia-tools": "^1.0.0",
+    "bootstrap": "^3.3.7",
+    "bootstrap-material-design": "^0.5.10",
     "browser-sync": "^2.17.5",
     "conventional-changelog": "1.1.0",
     "copy": "^0.3.0",
@@ -92,10 +94,10 @@
       "bootstrap": "github:twbs/bootstrap@^3.3.6",
       "bootstrap-material-design": "npm:bootstrap-material-design@^0.5.10",
       "css": "github:systemjs/plugin-css@^0.1.35",
-      "systemjs/plugin-css": "github:systemjs/plugin-css@0.1.35",
       "fetch": "github:github/fetch@^1.0.0",
       "font-awesome": "npm:font-awesome@4.6.3",
       "jquery": "npm:jquery@^2.2.4",
+      "systemjs/plugin-css": "github:systemjs/plugin-css@0.1.35",
       "text": "github:systemjs/plugin-text@^0.0.8"
     },
     "devDependencies": {}
